@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>createbill</title>
+  <link rel="stylesheet" href="bill.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+    
+</head>
+<body>
+  <div class="container">
+   
+      <div class="navbar">
+     
+        <nav>
+          <ul>
+            <li><a href="">Billing System</a></li>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="/createbill/bill.html">Create Bill</a></li>
+            <li><a href="">Device</a></li>
+            <li><a href="/login/billing_tracker.html">Logout</a></li>
+          </ul>
+        </nav>
+        <img src="l1.jpg"class="menu">
+      
+      </div>
+  </div>
+<div class="form">
+
+    <form id="billingForm" action="process_form.php" method="post">
+        <div class="first">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="deviceName">Device Name:</label>
+            <input type="text" id="deviceName" name="deviceName" required><br>
+
+            <label for="imei">IMEI Number:</label>
+            <input type="text" id="imei" name="imei" required><br>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required><br>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4"></textarea><br>
+
+            <label for="otherCharge">Other Charge:</label>
+            <input type="number" id="otherCharge" name="otherCharge"><br>
+
+            <label for="readyStatus">Ready Status:</label>
+            <select id="readyStatus" name="readyStatus">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
+        </div>
+            <div class="second">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+
+                <label for="model">Model:</label>
+                <input type="text" id="model" name="model" required><br>
+                <br>
+                <label for="fault">Fault:</label>
+                <textarea id="fault" name="fault" rows="4"></textarea><br>
+                <br>
+                <label for="userName">User Name:</label>
+                <input type="text" id="userName" name="userName" required><br>
+
+                <label for="advanceAmount">Advance Amount:</label>
+                <input type="number" id="advanceAmount" name="advanceAmount" required><br>
+
+                <label for="totalAmount">Total Amount:</label>
+                <input type="number" id="totalAmount" name="totalAmount" required><br>
+
+                <label for="deliveryStatus">Delivery Status:</label>
+                <select id="deliveryStatus" name="deliveryStatus">
+                    <option value="pending">Pending</option>
+                    <option value="delivered">Delivered</option>
+                </select><br>
+            </div>
+
+        <button type="submit">Submit</button>
+        
+    </form>
+
+</div>
+  
+  <div class="sidenav">
+    <img src="logo.png"class="logo">
+  </div>
+  
+  
+   
+</body>
+</html>

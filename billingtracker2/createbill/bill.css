@@ -1,0 +1,270 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+}
+
+.container{
+
+    width:100%;
+    height: 100vh;
+    background:url("back_image.jpg");
+    background-color: blueviolet;
+    padding-left: 11%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow:hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    position: relative;
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.menu{
+    width: 25px;
+    cursor: pointer;
+   
+}
+nav{
+    flex: 1;
+    text-align: right;
+    margin-left: auto;
+}
+
+nav ul li{
+
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:azure;
+    font-size: 14px;
+   
+    
+}
+
+nav ul li a:hover{
+    color:aquamarine
+}
+.sidenav{
+    position: fixed;
+    background: #FF3390;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height:100vh;
+    display: flex;
+    background: linear-gradient(rgb(243, 62, 113),#e36eab,#d0429c,rgb(247, 25, 102));
+    background-size: 100% 500%;
+    background-position: 0 40%;
+    
+}
+    
+.logo{
+    
+    position: fixed;
+    width: 100px;
+    height:20vh;
+    display: flex;
+    
+
+}
+
+
+
+
+
+.sidenav:hover{
+    animation: backcolor 20s linear infinite reverse;
+
+}
+
+.text-box-container {
+    position: absolute;
+    left: 150px;
+    bottom: 400px;
+    display: flex;
+    
+    
+}
+
+
+form{
+    position: absolute;
+    top:20%;
+    left:20%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: 20px auto;
+    font-size: 14px;
+    background:transparent;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 40px rgb(240, 155, 155);
+    margin-bottom: 300px;
+    
+    
+}
+
+
+.first{
+
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.second{
+
+    flex: 1; 
+    
+}
+
+.form input{
+
+    width: 200px; 
+    height: 30px;
+    border-radius:  0 50vh 100%;
+    border-color: rgb(116, 116, 202);
+    cursor: pointer;
+    padding: 10px;
+    background: transparent;
+    
+}
+
+
+textarea{
+    border-radius: 0 50vh 100%;
+    background: transparent;
+    border-color: rgb(116, 116, 202);
+    cursor: pointer;
+
+}
+
+button{
+
+    position: absolute;
+    right: 374px;
+    bottom: 400px;
+    display: flex;
+    background:rgb(209, 82, 144);
+    cursor: pointer;
+    color: rgb(249, 243, 243);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding: 3px 10px;
+    transition: 0.5s;
+    border-radius: 0 50vh 50%;
+
+}
+table{
+
+    position: absolute;
+    right: 50px;
+    bottom: 300px;
+    width: 540px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+    
+
+}
+button:hover{
+
+    letter-spacing: 0.25em;
+    background: rgb(91, 91, 242);
+    box-shadow: 0 0 35px rgb(91, 91, 242)ck;
+}
+
+
+
+@keyframes backcolor {
+    0%{
+        background-position: 0 0%;
+    }
+    100%{
+        background-position: 0 400%;
+    }
+}
+
+
+th, td {
+    
+    text-align: left ;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 0 50vh 100% ;
+}
+
+th {
+     background: linear-gradient(rgb(167, 38, 193),#7c40c7,#b157cf,rgb(175, 112, 200));;
+     opacity: 0.8;
+
+}
+
+
+tr:hover {
+    background: linear-gradient(rgb(167, 38, 193),#7c40c7,#b157cf,rgb(175, 112, 200));;
+    
+    animation: backcolor 20s linear infinite reverse;
+
+}
+th:hover{
+
+    animation: backcolor 20s linear infinite reverse;
+
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        text-align: left;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .sidenav {
+        width: 70px;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    form {
+        left: 5%;
+        right: 5%;
+    }
+
+    button {
+        right: 10%;
+    }
+
+    table {
+        right: 10px;
+    }
+}

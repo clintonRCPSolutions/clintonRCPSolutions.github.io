@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing_Tracker</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+   
+        <div class="navbar">
+       
+          <nav>
+            <ul>
+              <li><a href="">Billing System</a></li>
+              <li><a href="">Dashboard</a></li>
+              <li><a href="">Create Bill</a></li>
+              <li><a href="">Device</a></li>
+              <li><a href="/login/billing_tracker.html">Logout</a></li>
+            </ul>
+          </nav>
+          <img src="back_image.jpg"class="menu">
+        
+       
+   <div class="form">
+    <h1>Create a Bill</h1>
+    <form id="billingForm" action="process_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="deviceName">Device Name:</label>
+        <input type="text" id="deviceName" name="deviceName" required>
+
+        <label for="imei">IMEI Number:</label>
+        <input type="text" id="imei" name="imei" required>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4"></textarea>
+
+        <label for="otherCharge">Other Charge:</label>
+        <input type="number" id="otherCharge" name="otherCharge">
+
+        <label for="readyStatus">Ready Status:</label>
+        <select id="readyStatus" name="readyStatus">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" required>
+
+        <label for="fault">Fault:</label>
+        <textarea id="fault" name="fault" rows="4"></textarea>
+
+        <label for="userName">User Name:</label>
+        <input type="text" id="userName" name="userName" required>
+
+        <label for="advanceAmount">Advance Amount:</label>
+        <input type="number" id="advanceAmount" name="advanceAmount" required>
+
+        <label for="totalAmount">Total Amount:</label>
+        <input type="number" id="totalAmount" name="totalAmount" required>
+
+        <label for="deliveryStatus">Delivery Status:</label>
+        <select id="deliveryStatus" name="deliveryStatus">
+            <option value="pending">Pending</option>
+            <option value="delivered">Delivered</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        
+    </form>
+</div>
+
+
+</div>
+</div>
+
+</body>
+</html>
