@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="user.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/23c3ccaec2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-------------Home Section----------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+        <img src="images/name.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+    <p> Software Developer</p>
+    <h1>I am<span> Clinton R </span><br>From India</h1>
+</div>
+</div>
+</div>
+
+<!-------------About Section----------------->
+<div id="about">
+<div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="images/clinton.png">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Hello! I'm clinton, a passionate software developer with a knack for turning ideas into reality through code.
+                My journey in the world of programming began with a fascination for 
+                solving problems and a commitment to delivering high-quality software solutions.
+                I thrive on challenges and constantly 
+                seek opportunities to expand my skills and knowledge.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('exprience')">Exprience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>FrontEnd</span><br>WebDevelopment</li>
+                        <li><span>Mobile Applications</span><br>Java</li>
+                        <li><span>Node</span><br>Express JS</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="exprience">
+                    <ul>
+                        <li><span>Iam a Fresher</span><br>Looking for a Job</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>School</span><br>SKY Matric Hr.sec.School</li>
+                        <li><span>Bachelors</span><br>Sacred Heart College,Tirupattur</li>
+                        <li><span>MCA</span><br>Sacred Heart College,Tirupattur</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-------------Service Section----------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+              <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design </h2>
+                <p>I am a passionate and innovative web developer with a keen eye for design and a knack for solving complex problems through elegant solutions. My goal is to 
+                create seamless and visually appealing web experiences that leave a lasting impression</p>
+                <a href="#">Learn More</a>
+              </div> 
+              <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>App Development</h2>
+                <p>I am a passionate and innovative web developer with a keen eye for design and a knack for solving complex problems through elegant solutions. My goal is to 
+                create seamless and visually appealing web experiences that leave a lasting impression</p>
+                <a href="#">Learn More</a>
+              </div>  
+              <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Node Js</h2>
+                <p>I am a passionate and innovative web developer with a keen eye for design and a knack for solving complex problems through elegant solutions. My goal is to 
+                create seamless and visually appealing web experiences that leave a lasting impression</p>
+                <a href="#">Learn More</a>
+              </div> 
+            </div>
+        </div>
+    </div>
+    <!-------------Portfolio Section----------------->
+    <div id="portfolio">
+       <h1 class="sub-title">My Work</h1>
+       
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Learning Application</h3>
+                    <p> By using this Android application you can programming language through your Mobile
+                        and I implemented the CRUD operation in this I made this app using Android Studio and java 
+                        for the backend logics
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Personal Portfolio</h3>
+                    <p> Developed my personal portfolio website that you are seeing now,used HTML,CSS,Javascript 
+                        for developing my personal portfolio website.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Project anonymous</h3>
+                    <p> By using this Android application you can programming language through your Mobile
+                        and I implemented the CRUD operation in this I made this app using Android Studio and java 
+                        for the backend logics
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+    <!-------------Contact Section----------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>pradeshkaran@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>123456788</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/prembritto"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.me/919384110432?text=Hello%20there!"><i class="fa-brands fa-whatsapp"></i></a>
+                        
+                        <!---<a href=""><i class="fa-brands fa-instagram"></i></a>---->
+                    </div>
+                    <a href="images/Clintonresume.pdf" download class="btn btn2" class="btn btn2">Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text"name="Name" placeholder="Your Name" required>
+                        <input type="email"name="Email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © clinton R<i class="fa-solid fa-bolt-lightning"></i>  </p>
+        </div>
+    </div>
+</body>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+</html>
